@@ -1,8 +1,7 @@
-const ExponentFive = () => (
-  <div className="exponent-counter-container">
-    <p className="exponent-label">n⁵</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 * 2 = <span className="total">32</span></p>
-  </div>
-);
+function ExponentFive(props) {
+  const result =
+    props.count * props.count * props.count * props.count * props.count;
+  return <p>n⁵ = {result}</p>;
+}
 
 export default ExponentFive;
